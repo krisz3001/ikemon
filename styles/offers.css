@@ -1,0 +1,132 @@
+#modal-offer .pokemon-card, #modal-request .pokemon-card{
+    background-color: white;
+    color: black;
+}
+
+#modal-offer .btn-trade {
+    display: none;
+}
+
+.offer-cards {
+    display: flex;
+    gap: 10px;
+}
+
+.offer-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.offer-title {
+    font-size: 25px;
+}
+
+.payment {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 0;
+    gap: 5px;
+}
+
+.payment input {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#offer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    width: 200px;
+}
+
+#offer-select {
+    position: absolute;
+    width: 100%;
+    top: 30px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.offer-selected {
+    top: 30px!important;
+    transform: none!important;
+}
+
+.offer-info {
+    display: block;
+    text-align: center;
+    font-size: larger;
+}
+
+#request-replies {
+    display: flex;
+    gap: 50px;
+    padding: 10px;
+    padding-top: 0;
+}
+
+.request-reply {
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 50%;
+    transition: all 0.2s ease;
+}
+
+.request-btn {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+
+#request-accept:hover {
+    opacity: 100%;
+    box-shadow: 10px 10px 12px -1px rgba(0,0,0,0.75);
+}
+
+#request-deny:hover {
+    opacity: 100%;
+    box-shadow: 10px 10px 12px -1px rgba(0,0,0,0.75);
+}
+
+.reply-selected {
+    opacity: 100%;
+    box-shadow: 10px 10px 12px -1px rgba(0,0,0,0.75);
+}
+
+.disabled {
+    display: none;
+}
+
+#request-accept:hover + #request-deny, #request-accept:has(+ #request-deny:hover) {
+    opacity: 50%;
+    box-shadow: none;
+}
+
+@media (max-width: 500px) {
+    .modal-trade, #offer-left, #offer-right, #request-left, #request-right{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
+    .modal .pokemon-card {
+        width: 100%;
+    }
+    .noscroll {
+        overflow: hidden;
+    }
+}

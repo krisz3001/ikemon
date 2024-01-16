@@ -1,0 +1,91 @@
+#notification-count {
+    display: none;
+    text-align: center;
+    font-size: 15px;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    position: absolute;
+    right: 0;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification-count-active {
+    display: flex!important;
+}
+
+#bell {
+    z-index: 1;
+    position: relative;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+#notification-icon {
+    font-size: 40px;
+}
+
+.notification-icon-filled {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24!important;
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#notifications {
+    display: none;
+    flex-direction: column;
+    width: 300px;
+    left: -300px;
+    color: #fff;
+    position: absolute;
+    background-color: #517d81;
+    padding: 10px;
+    border: 2px solid black;
+    gap: 10px;
+    animation: fade 0.5s;
+    border-radius: 5px;
+    cursor: default;
+}
+
+.notification {
+    background-color: #333;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.notification:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.notification-body {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.notification-text {
+    width: 100%;
+}
+
+.trade-icon {
+    padding-right: 10px;
+    border-right: 1px solid #ddd;
+}
+
+.trade-from {
+    font-weight: bold;
+}

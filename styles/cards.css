@@ -1,0 +1,119 @@
+#card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    gap: 30px;
+}
+
+.pokemon-card {
+    border-radius: 8px;
+    box-shadow: 1px 15px 23px -11px rgba(0,0,0,0.5);
+    box-shadow: 1px 15px 23px -11px rgba(0,0,0,0.5);
+    -moz-box-shadow: 1px 15px 23px -11px rgba(0,0,0,0.5);
+    margin-top: 20px;
+    text-align: center;
+    width: 200px;
+    position: relative;
+    z-index: 0;
+}
+
+.pokemon-card .image {
+    border-radius: 8px 8px 0 0;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pokemon-card .image a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pokemon-card img {
+    height: auto;
+    max-width: 80%;
+}
+
+.pokemon-card .details {
+    padding: 10px;
+}
+
+.pokemon-card h2 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.pokemon-card h2 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.pokemon-card h2 a:hover {
+    color: var(--clr-highlight);
+}
+
+.card-type {
+    display: block;
+    color: var(--clr-secondary);
+    font-style: italic;
+    margin: 3px;
+}
+
+.attributes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-hp,
+.card-attack,
+.card-defense,
+.card-price {
+    font-weight: bold;
+}
+
+.pokemon-card .trade {
+    background-color: var(--clr-main);
+    border-radius: 0 0 8px 8px;
+    color: var(--clr-white);
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+.pokemon-card .trade:hover {
+    background-color: var(--clr-highlight);
+    margin-top: -5px;
+    padding-bottom: 15px;
+}
+
+.btn-trade {
+    border: none;
+    position: absolute;
+    background-color: unset;
+    left: 0;
+    padding: 5px;
+    height: 40px;
+}
+
+.btn-trade-icon {
+    cursor: pointer;
+    font-size: 30px!important;
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 300,
+    'GRAD' -25,
+    'opsz' 30;
+    transition: all 0.2s ease;
+}
+
+.btn-trade-icon:hover {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 300,
+    'GRAD' 200,
+    'opsz' 30;
+}

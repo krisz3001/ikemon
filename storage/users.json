@@ -1,0 +1,11 @@
+{
+    "6590a118d90d8": {
+        "username": "admin",
+        "email": "admin@admin.admin",
+        "password": "$2y$10$hcL9Rjs29of.IcZqLuL49O\/LSKTdAR29za8qcWNGVoTLSRuezkmdm",
+        "money": 1000,
+        "isadmin": true,
+        "requests": [],
+        "id": "6590a118d90d8"
+    }
+}

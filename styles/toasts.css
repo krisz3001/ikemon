@@ -1,0 +1,42 @@
+#toasts {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    z-index: 999;
+    gap: 20px;
+    transition: all 0.5s;
+}
+
+.toast {
+    position: fixed;
+    width: 300px;
+    height: 60px;
+    background-color: var(--clr-main);
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 10px 12px -1px rgba(0,0,0,0.75);
+    animation: fade 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    z-index: 999;
+}
+
+.toast-img {
+    width: 60px;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.toast-msg {
+    color: white;
+    text-align: center;
+    margin: 10px;
+    width: 100%;
+}
